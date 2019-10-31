@@ -40,6 +40,8 @@ export class MainComponent implements OnInit {
     });
   }
 
+
+
   // calculoUsd() {
   //   this.resultDollar = this.valorDigitado * this.moedas.USD.high;
   // }
