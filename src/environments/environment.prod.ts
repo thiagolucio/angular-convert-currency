@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiMoedas: 'https://economia.awesomeapi.com.br/'
 };

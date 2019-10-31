@@ -1,0 +1,20 @@
+<nav class="navbar navbar-light bg-dark">
+  <a class="navbar-brand text-light">
+    <i class="fas fa-file-invoice-dollar"></i> {{ 'HOME.TITLE' | translate }} 
+    <small>{{'HOME.SLOGAN' | translate}}</small>
+  </a>
+  <div class="form-inline">
+  </div>
+  <div class="my-2 my-sm-0">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text p-1" for="translate" [ngClass]="langeselect.value === 'en' ? 'england-flag' : 'brasil-flag'">{{'HOME.LABEL' | translate}}</label>
+      </div>
+      <select class="custom-select" id="translate" #langeselect (change)="translate.use(langeselect.value)">      
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang">
+          <h4>{{lang}}</h4>
+        </option>
+      </select>
+    </div>
+  </div>
+</nav>
