@@ -1,11 +1,11 @@
-import { Time } from '@angular/common';
+import { Time, CurrencyPipe } from '@angular/common';
 
 export interface Moedas {
     USD: {
         code: string;
         codein: string;
         name: string;
-        high: number;
+        high: CurrencyPipe;
         low: number;
         varBid: number;
         pctChange: number;

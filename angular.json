@@ -28,12 +28,13 @@
               "src/assets",
               "src/assets/img"
             ],
-            "styles": [                           
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",              
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
@@ -99,7 +100,8 @@
               "src/assets",
               "src/assets/img"
             ],
-            "styles": [ 
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -131,6 +133,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "angular-convert-currency-language"
 }

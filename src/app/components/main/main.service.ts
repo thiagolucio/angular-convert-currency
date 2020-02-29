@@ -12,9 +12,17 @@ export class MainService {
 
   constructor(private http: HttpClient) { }
 
-  getListaMoedas(): Observable<Moedas[]> {
-    const URLAPIMOEDAS = `${environment.apiMoedas}/all/USD-BRL,EUR-BRL,BTC-BRL`;
-    return this.http.get<Moedas[]>(URLAPIMOEDAS);
+  getListaMoedasUSD(): Observable<Moedas[]> {
+    const URLAPIMOEDASUSD = `${environment.apiMoedas}/all/USD-BRL`;
+    return this.http.get<Moedas[]>(URLAPIMOEDASUSD);
+  }
+  getListaMoedasEUR(): Observable<Moedas[]> {
+    const URLAPIMOEDASEUR = `${environment.apiMoedas}/all/EUR-BRL`;
+    return this.http.get<Moedas[]>(URLAPIMOEDASEUR);
+  }
+  getListaMoedasBTC(): Observable<Moedas[]> {
+    const URLAPIMOEDASBTC = `${environment.apiMoedas}/all/BTC-BRL`;
+    return this.http.get<Moedas[]>(URLAPIMOEDASBTC);
   }
 
 
